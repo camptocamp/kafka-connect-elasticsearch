@@ -1,0 +1,7 @@
+kafka-connect-elasticsearch:
+  external_links:
+    - 'elasticsearch/elasticsearch:'
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: elasticsearch=true
+  image: camptocamp/kafka-connect-elasticsearch:0.1
